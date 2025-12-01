@@ -1,0 +1,71 @@
+.root {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Helvetica";
+    /*-fx-base: #87c7d1;*/
+    -fx-background: #2c2e3e;
+    -fx-text-fill: #acc2d9;
+    /* -fx-background-image: url("../images/background.jpg"); */
+}
+
+
+#Controller {
+    -fx-background: #2c2e3e;
+}
+
+.text-field {
+    -fx-text-fill: #acc2d9;
+    -fx-background: #34374c;
+    -fx-border-color: #acc2d9;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#textController {
+    -fx-textfill: #ffffff;
+}
+
+#searchBar {
+    -fx-background-radius: 20;
+    -fx-background: #ffffff;
+
+}
+
+
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+.button {
+    -fx-background-color: #ee2b47;
+
+    -fx-text-fill: #ffffff;
+}
+
+.button-Button1{
+    
+}
+#dictionaryWords
+{
+    -fx-text-fill:#2a7c8f;
+}
+
+/* #Logout
+{
+    -fx-text-fill:#2a7c8f;
+  } */
+
+#SignUp
+{
+    -fx-text-fill:#ffffff;
+}
+
+#WelcomeBack
+{
+    -fx-text-fill:#2a7c8f;
+}
+
+.button :hover
+{
+    -fx-background-color: #f8dd8b
+}
