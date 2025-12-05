@@ -78,4 +78,21 @@ input {
     background: #ff4a6a;
 }
 
+/* Make date text same color as labels */
+.styled-date {
+    color: #ffffffcc;
+}
+
+/* Remove default dark text on some browsers */
+.styled-date::-webkit-datetime-edit {
+    color: #ffffffcc;
+}
+
+/* Calendar icon color (Chrome, Edge, Opera) */
+.styled-date::-webkit-calendar-picker-indicator {
+    filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(180deg);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 
