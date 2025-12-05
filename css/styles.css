@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     background: #2c2e3e;
-    color: #acc2d9;
+    color: #acc2d9; /* default text color */
     margin: 0;
     padding: 20px;
 }
@@ -17,7 +17,7 @@ input {
 }
 
 label, p, h1, h2, h3 {
-    color: #ffffff;
+    color: #acc2d9; /* changed from #ffffff */
 }
 
 button {
@@ -35,3 +35,4 @@ button:hover {
     background-color: #f8dd8b;
     color: black;
 }
+
