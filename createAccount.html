@@ -7,37 +7,30 @@
 </head>
 <body>
 
+<div class="form-container">
     <h1>Create Account</h1>
 
-    <div class="field">
-        <label>Username</label>
-        <input id="usernameCAField" type="text">
-    </div>
+    <label>First Name</label>
+    <input id="firstNameField" type="text">
 
+    <label>Last Name</label>
+    <input id="lastNameField" type="text">
 
-    <div class="field">
-        <label>First Name</label>
-        <input id="firstNameField" type="text">
-    </div>
+    <label>Email</label>
+    <input id="emailField" type="email">
 
-    <div class="field">
-        <label>Last Name</label>
-        <input id="lastNameField" type="text">
-    </div>
-
-    <div class="field">
-        <label>Email</label>
-        <input id="emailField" type="email">
-    </div>
-
-    <div class="field">
-        <label>Date of Birth</label>
+    <label>Date of Birth</label>
+    <div class="dob-row">
         <input id="dobField" type="date">
+        <span class="calendar-icon">📅</span>
     </div>
 
+    <label>Username</label>
+    <input id="usernameCAField" type="text">
 
-    <button id="nextPass">Next</button><br>
-    <button onclick="window.location.href='login.html'">Back</button>
+    <button id="nextPass" class="primary-btn">Next</button>
+</div>
 
 </body>
 </html>
+
