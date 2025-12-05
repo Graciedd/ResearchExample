@@ -70,5 +70,52 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels aligned to the left edge of inputs */
+label {
+    align-self: flex-start; /* aligns label to start of container (left edge of input) */
+    margin-bottom: 4px;     /* smaller space below the label */
+    color: #acc2d9;
+}
+
+/* Inputs */
+input {
+    color: #acc2d9;
+    background: #34374c;
+    border: 2px solid #acc2d9;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 14px; /* space after input */
+}
+
+/* Placeholder text color */
+input::placeholder {
+    color: #acc2d9;
+    opacity: 1;
+}
+
+/* Buttons */
+button {
+    background-color: #ee2b47;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f8dd8b;
+    color: black;
+}
+
 
 
