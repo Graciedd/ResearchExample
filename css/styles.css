@@ -1,76 +1,82 @@
+/* Full-screen gradient background */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   /* centers vertically */
-    align-items: center;       /* centers horizontally */
-    height: 100vh;             /* full window height */
+    height: 100vh;
     margin: 0;
-    // text-align: center
-    // font-family: Helvetica, sans-serif;
-    // background: #2c2e3e;
-    // color: #acc2d9;
-    // margin: 0;
-    // padding: 20px;
-}
-
-input {
-    margin: 6px 0;
-    color: #acc2d9;
-    background: #34374c;
-    border: 2px solid #acc2d9;
-    border-radius: 20px;
-    padding: 10px;
-    width: 250px;
-    margin-bottom: 14px;
-}
-
-label, p, h1, h2, h3 {
-    color: #ffffff;
-    margin: 6px 0;
-}
-
-button {
-    margin: 6px 0;
-    background-color: #ee2b47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1B1F2A, #2C3242);
+    font-family: 'Segoe UI', sans-serif;
     color: white;
+}
+
+/* Centered mobile-style form card */
+.form-container {
+    width: 350px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Pink/red title to match mockup */
+h1 {
+    text-align: left;
+    color: #FF3355;
+    margin-bottom: 25px;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    margin-top: 12px;
+    display: block;
+    color: #ffffffcc;
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
     border: none;
-    padding: 10px 18px;
-    margin-top: 10px;
-    border-radius: 10px;
+    background: #2A2F3A;
+    color: white;
     font-size: 15px;
+    margin-top: 6px;
+}
+
+/* Date of Birth row with calendar icon */
+.dob-row {
+    display: flex;
+    align-items: center;
+}
+
+.dob-row input {
+    flex: 1;
+}
+
+.calendar-icon {
+    margin-left: 10px;
+    font-size: 22px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #f8dd8b;
-    color: black;
+/* Main button */
+.primary-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 17px;
+    background: #FF3355;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
 }
 
-h1 {
-    font-size: 32px;
-    font-family: Arial, sans-serif; /* Your title font */
-}
-
-/* Container for each label + input */
-.field {
-    display: flex;
-    align-items: center; /* vertically align label + input */
-    margin: 10px 0;
-}
-
-/* Labels aligned RIGHT and matching title font */
-.field label {
-    width: 150px;                 /* space for the label */
-    text-align: right;            /* right-align the words */
-    margin-right: 10px;           /* spacing before input */
-    font-family: Arial, sans-serif; /* same as title */
-    font-size: 20px;
-}
-
-/* Inputs */
-.field input {
-    padding: 6px;
-    font-size: 16px;
+.primary-btn:hover {
+    background: #ff4a6a;
 }
 
 
