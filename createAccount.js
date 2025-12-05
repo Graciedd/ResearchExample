@@ -23,6 +23,6 @@ document.getElementById("passwordCheck").addEventListener("click", () => {
     localStorage.setItem("newUser", JSON.stringify(newUser));
 
     // Navigate to Set Password page
-    window.location.href = "setPassword.html";
+    window.location.href = "passwordCheck.html";
 });
 
