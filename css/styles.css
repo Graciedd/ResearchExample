@@ -16,8 +16,14 @@ input {
     margin-bottom: 14px;
 }
 
+/* Placeholder text color */
+input::placeholder {
+    color: #acc2d9;
+    opacity: 1; /* ensures color is solid */
+}
+
 label, p, h1, h2, h3 {
-    color: #acc2d9; /* changed from #ffffff */
+    color: #acc2d9; /* text outside buttons */
 }
 
 button {
@@ -35,4 +41,11 @@ button:hover {
     background-color: #f8dd8b;
     color: black;
 }
+
+/* Calendar icon color for date inputs */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(183deg) brightness(94%) contrast(91%);
+    cursor: pointer;
+}
+
 
