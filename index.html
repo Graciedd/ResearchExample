@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>TheaterCritic</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <h1>Welcome to TheaterCritic</h1>
-    <p>Your source for movie reviews and ratings.</p>
+<!-- LOGIN PAGE -->
+<div class="page active" id="loginPage">
+    <h1>Welcome to Critic Theater</h1>
+    <h3>Login</h3>
 
-    <button onclick="window.location.href='login.html'">
-        Enter
-    </button>
+    <input id="loginUser" type="text" placeholder="Username">
+    <input id="loginPass" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+    <br><br>
+    <button onclick="showPage('createPage')">Create Account</button>
+</div>
+
+<!-- CREATE ACCOUNT PAGE -->
+<div class="page" id="createPage">
+    <h1>Create Account</h1>
+
+    <input id="caUser" type="text" placeholder="Username">
+    <input id="caFirst" type="text" placeholder="First Name">
+    <input id="caLast" type="text" placeholder="Last Name">
+    <input id="caEmail" type="email" placeholder="Email">
+    <input id="caDob" type="date">
+
+    <button onclick="goToPassword()">Next</button>
+    <br><br>
+    <button onclick="showPage('loginPage')">Back</button>
+</div>
+
+<!-- PASSWORD PAGE -->
+<div class="page" id="passwordPage">
+    <h1>Set Password</h1>
+
+    <input id="caPass" type="password" placeholder="Password">
+    <input id="caPass2" type="password" placeholder="Retype Password">
+
+    <button onclick="createAccount()">Create Account</button>
+    <br><br>
+    <button onclick="showPage('createPage')">Back</button>
+</div>
+
+<!-- HOME MOVIE PAGE -->
+<div class="page" id="homePage">
+    <h1>Dune: Part 2 (2024)</h1>
+
+    <div class="movie-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzJhZmQxNjEtN2IyOS00NzQzLTk3ODItYjQzZDYyZmQyYmFlXkEyXkFqcGc@._V1_.jpg" width="200">
+
+        <h2>Summary</h2>
+        <p>
+            Paul Atreides unites with the Fremen while on a warpath of revenge against those who destroyed his family.
+        </p>
+
+        <h2>Ratings — 2.3</h2>
+        <div class="rating-bar">
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+
+        <h2>Where to Watch</h2>
+        <ul>
+            <li>HBO Max</li>
+            <li>Amazon Prime</li>
+            <li>YouTube</li>
+            <li>Mubi</li>
+        </ul>
+
+        <button>Add to Watchlist</button>
+
+        <h2>Reviews</h2>
+
+        <div class="review">
+            <strong>Sarah R.</strong> ⭐⭐⭐☆☆  
+            <p>Fell asleep halfway through. Not bad.</p>
+        </div>
+
+    </div>
+
+    <br><br>
+    <button onclick="showPage('loginPage')">Log Out</button>
+</div>
 
 </body>
 </html>
