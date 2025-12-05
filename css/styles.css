@@ -1,92 +1,75 @@
-/* Background */
 body {
-    height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #1B1F2A, #2C3242);
-    font-family: 'Segoe UI', sans-serif;
-    color: white;
+    font-family: Helvetica, sans-serif;
+    background: #2c2e3e;
+    color: #acc2d9;
 }
 
-/* Card container */
-.form-container {
-    width: 350px;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+/* Containers */
+.page {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
 }
 
-/* Titles */
-h1 {
-    text-align: left;
-    color: #FF3355;
-    margin-bottom: 25px;
-}
-
-/* Labels */
-label {
-    font-size: 16px;
-    margin-top: 12px;
+.page.active {
     display: block;
-    color: #ffffffcc;
 }
 
-/* Inputs */
-input {
-    width: 100%;
+/* Text fields */
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+    width: 90%;
     padding: 10px;
-    border-radius: 6px;
-    border: none;
-    background: #2A2F3A;
-    color: white;
-    font-size: 15px;
-    margin-top: 6px;
+    margin: 8px 0;
+    border-radius: 20px;
+    border: 2px solid #acc2d9;
+    background: #34374c;
+    color: #acc2d9;
 }
 
-/* Primary red button */
-.primary-btn {
-    width: 100%;
-    margin-top: 20px;
-    padding: 12px;
-    font-size: 17px;
-    background: #FF3355;
-    border: none;
-    border-radius: 8px;
+/* Buttons */
+button {
+    background: #ee2b47;
     color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
     cursor: pointer;
 }
 
-.primary-btn:hover {
-    background: #ff4a6a;
+button:hover {
+    background: #f8dd8b;
 }
 
-/* Secondary button */
-.secondary-btn {
-    width: 100%;
-    margin-top: 12px;
+/* Movie Card */
+.movie-container {
+    background: #34374c;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.rating-bar {
+    display: flex;
+    gap: 8px;
+}
+
+.rating-bar div {
+    width: 20px;
+    height: 80px;
+    background: gold;
+}
+
+.review {
+    background: #2c2e3e;
     padding: 10px;
-    font-size: 16px;
-    background: transparent;
-    border: 2px solid #FF3355;
-    border-radius: 8px;
-    color: #FF3355;
-    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
-.secondary-btn:hover {
-    background: rgba(255, 51, 85, 0.1);
-}
-
-/* Small text under buttons */
-.small-text {
-    margin-top: 18px;
-    font-size: 14px;
-    color: #cccccc;
-    text-align: center;
-}
 
 
 
