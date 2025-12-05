@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div class="container">
-    <h1>Welcome to TheaterCritic</h1>
+    <h1>Create Account</h1>
 
-    <input id="loginUser" type="text" placeholder="Username">
-    <input id="loginPass" type="password" placeholder="Password">
+    <input id="caUser" type="text" placeholder="Username">
+    <input id="caFirst" type="text" placeholder="First Name">
+    <input id="caLast" type="text" placeholder="Last Name">
+    <input id="caEmail" type="email" placeholder="Email">
+    <input id="caDob" type="date">
 
-    <button onclick="login()">Login</button>
-    <br><br>
-    <a href="createAccount.html">
-        <button>Create Account</button>
-    </a>
+    <button onclick="nextPage()">Next</button>
+    <a href="login.html"><button>Back</button></a>
 </div>
 
 <script>
-function login() {
-    let u = document.getElementById("loginUser").value;
-    let p = document.getElementById("loginPass").value;
+function nextPage() {
+    let u = document.getElementById("caUser").value;
+    let f = document.getElementById("caFirst").value;
+    let l = document.getElementById("caLast").value;
+    let e = document.getElementById("caEmail").value;
+    let d = document.getElementById("caDob").value;
 
-    if (!u || !p) {
-        alert("Invalid username or password");
+    if (!u || !f || !l || !e || !d) {
+        alert("Please fill all fields.");
         return;
     }
 
-    window.location.href = "home.html";
+    window.location.href = "passwordCheck.html";
 }
 </script>
 
 </body>
 </html>
+
 
 
 
