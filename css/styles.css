@@ -1,11 +1,31 @@
+/* Keep the title at the top, centered */
+h1 {
+    text-align: center;
+    margin-bottom: 40px; /* spacing between title and form */
+    color: #acc2d9;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     background: #2c2e3e;
-    color: #acc2d9; /* default text color */
+    color: #acc2d9;
     margin: 0;
+    height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centers everything vertically */
     padding: 20px;
 }
 
+/* Wrap form elements in a container for proper centering */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inputs */
 input {
     color: #acc2d9;
     background: #34374c;
@@ -19,13 +39,15 @@ input {
 /* Placeholder text color */
 input::placeholder {
     color: #acc2d9;
-    opacity: 1; /* ensures color is solid */
+    opacity: 1;
 }
 
-label, p, h1, h2, h3 {
-    color: #acc2d9; /* text outside buttons */
+/* Text outside buttons */
+label, p, h2, h3 {
+    color: #acc2d9;
 }
 
+/* Buttons */
 button {
     background-color: #ee2b47;
     color: white;
@@ -42,10 +64,11 @@ button:hover {
     color: black;
 }
 
-/* Calendar icon color for date inputs */
+/* Calendar icon color */
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(183deg) brightness(94%) contrast(91%);
     cursor: pointer;
 }
+
 
 
