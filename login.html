@@ -2,26 +2,38 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="login.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div class="container">
+    <h1>Welcome to Critic Theater</h1>
 
-<div class="form-container">
-    <h1>Welcome Back</h1>
+    <input id="loginUser" type="text" placeholder="Username">
+    <input id="loginPass" type="password" placeholder="Password">
 
-    <label>Username</label>
-    <input id="usernameField" type="text">
-
-    <label>Password</label>
-    <input id="passwordField" type="password">
-
-    <button id="loginButton" class="primary-btn">Login</button>
-
-    <p class="small-text">Don’t have an account?</p>
-    <button id="createAccountButton" class="secondary-btn">Create Account</button>
+    <button onclick="login()">Login</button>
+    <br><br>
+    <a href="createAccount.html">
+        <button>Create Account</button>
+    </a>
 </div>
+
+<script>
+function login() {
+    let u = document.getElementById("loginUser").value;
+    let p = document.getElementById("loginPass").value;
+
+    if (!u || !p) {
+        alert("Invalid username or password");
+        return;
+    }
+
+    window.location.href = "home.html";
+}
+</script>
 
 </body>
 </html>
+
 
