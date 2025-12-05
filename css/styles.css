@@ -1,4 +1,4 @@
-/* Full-screen gradient background */
+/* Background */
 body {
     height: 100vh;
     margin: 0;
@@ -10,22 +10,23 @@ body {
     color: white;
 }
 
-/* Centered mobile-style form card */
+/* Card container */
 .form-container {
-    background: none;
-    box-shadow: none;
-    padding: 0;
     width: 350px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-/* Pink/red title to match mockup */
+/* Titles */
 h1 {
     text-align: left;
     color: #FF3355;
     margin-bottom: 25px;
 }
 
-/* Label styling */
+/* Labels */
 label {
     font-size: 16px;
     margin-top: 12px;
@@ -33,7 +34,7 @@ label {
     color: #ffffffcc;
 }
 
-/* Input styling */
+/* Inputs */
 input {
     width: 100%;
     padding: 10px;
@@ -45,23 +46,7 @@ input {
     margin-top: 6px;
 }
 
-/* Date of Birth row with calendar icon */
-.dob-row {
-    display: flex;
-    align-items: center;
-}
-
-.dob-row input {
-    flex: 1;
-}
-
-.calendar-icon {
-    margin-left: 10px;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-/* Main button */
+/* Primary red button */
 .primary-btn {
     width: 100%;
     margin-top: 20px;
@@ -78,21 +63,30 @@ input {
     background: #ff4a6a;
 }
 
-/* Make date text same color as labels */
-.styled-date {
-    color: #ffffffcc;
-}
-
-/* Remove default dark text on some browsers */
-.styled-date::-webkit-datetime-edit {
-    color: #ffffffcc;
-}
-
-/* Calendar icon color (Chrome, Edge, Opera) */
-.styled-date::-webkit-calendar-picker-indicator {
-    filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(180deg);
-    opacity: 0.9;
+/* Secondary button */
+.secondary-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #FF3355;
+    border-radius: 8px;
+    color: #FF3355;
     cursor: pointer;
 }
+
+.secondary-btn:hover {
+    background: rgba(255, 51, 85, 0.1);
+}
+
+/* Small text under buttons */
+.small-text {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #cccccc;
+    text-align: center;
+}
+
 
 
