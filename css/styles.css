@@ -12,11 +12,10 @@ body {
 
 /* Centered mobile-style form card */
 .form-container {
+    background: none;
+    box-shadow: none;
+    padding: 0;
     width: 350px;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 /* Pink/red title to match mockup */
