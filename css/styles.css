@@ -1,4 +1,11 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centers vertically */
+    align-items: center;       /* centers horizontally */
+    height: 100vh;             /* full window height */
+    margin: 0;
+    text-align: center
     font-family: Helvetica, sans-serif;
     background: #2c2e3e;
     color: #acc2d9;
@@ -7,6 +14,7 @@ body {
 }
 
 input {
+    margin: 6px 0;
     color: #acc2d9;
     background: #34374c;
     border: 2px solid #acc2d9;
@@ -18,9 +26,11 @@ input {
 
 label, p, h1, h2, h3 {
     color: #ffffff;
+    margin: 6px 0;
 }
 
 button {
+    margin: 6px 0;
     background-color: #ee2b47;
     color: white;
     border: none;
