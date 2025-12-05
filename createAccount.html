@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create Account</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="createAccount.js" defer></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div class="container">
+    <h1>Welcome to TheaterCritic</h1>
 
-<h1>Create Account</h1>
+    <input id="loginUser" type="text" placeholder="Username">
+    <input id="loginPass" type="password" placeholder="Password">
 
-<label>First Name</label>
-<input id="firstNameField" type="text">
+    <button onclick="login()">Login</button>
+    <br><br>
+    <a href="createAccount.html">
+        <button>Create Account</button>
+    </a>
+</div>
 
-<label>Last Name</label>
-<input id="lastNameField" type="text">
+<script>
+function login() {
+    let u = document.getElementById("loginUser").value;
+    let p = document.getElementById("loginPass").value;
 
-<label>Email</label>
-<input id="emailField" type="email">
+    if (!u || !p) {
+        alert("Invalid username or password");
+        return;
+    }
 
-<label>Date of Birth</label>
-<input id="dobField" type="date" class="styled-date">
-
-<label>Username</label>
-<input id="usernameCAField" type="text">
-
-<button id="nextPass" class="primary-btn">Next</button>
+    window.location.href = "home.html";
+}
+</script>
 
 </body>
 </html>
+
 
 
